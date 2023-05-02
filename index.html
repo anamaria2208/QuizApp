@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="quiz-heading">
+      <h1 class="text-3xl text-center text-blue-700 m-6">Super Cool Quiz</h1>
+    </div>
+    <div
+      class="quiz-results hidden bg-slate-100 h-20 text-center py-6 flex justify-center items-center font-semibold text-xl text-slate-700"
+    >
+      You have <span class="text-blue-700 tracking-wide mx-1"> 100% </span> correct answers!
+    </div>
+    <form>
+      <div class="question question-1 m-6">
+        <h2>1. What is the capital city of canada?</h2>
+        <div class="input-group">
+          <input
+            type="radio"
+            id="vancuver"
+            name="capitalCity"
+            value="A"
+            checked
+          />
+          <label for="huey">Vancuver</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="ottawa" name="capitalCity" value="B" />
+          <label for="ottawa">Ottawa</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="toronto" name="capitalCity" value="C" />
+          <label for="toronto">Toronto</label>
+        </div>
+      </div>
+      <div class="question question-2 m-6">
+        <h2>2. Who was the winner of World Cup 2018?</h2>
+        <div class="input-group">
+          <input type="radio" id="france" name="winner" value="A" checked />
+          <label for="frace">France</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="croatia" name="winner" value="B" />
+          <label for="croatia">Croatia</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="england" name="winner" value="C" />
+          <label for="england">England</label>
+        </div>
+      </div>
+      <div class="question question-3 m-6">
+        <h2>3. Who was 44th President of the United States?</h2>
+        <div class="input-group">
+          <input type="radio" id="biden" name="president" value="A" checked />
+          <label for="biden">Joe Biden</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="trump" name="president" value="B" />
+          <label for="trump">Donald Trump</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="obama" name="president" value="C" />
+          <label for="obama">Barack Obama</label>
+        </div>
+      </div>
+      <div class="question question-4  m-6">
+        <h2>4. How far is Earth from Sun?</h2>
+        <div class="input-group">
+          <input type="radio" id="150m" name="distance" value="A" checked />
+          <label for="150m">150 million kilometers</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="200m" name="distance" value="B" />
+          <label for="200m">200 million kilometers</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="250m" name="distance" value="C" />
+          <label for="250m">250 million kilometers</label>
+        </div>
+      </div>
+      <div class="question question-5 m-6">
+        <h2>5. Who was first person on the Moon?</h2>
+        <div class="input-group">
+          <input type="radio" id="scott" name="person" value="A" checked />
+          <label for="scott">David Scott</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="armstrong" name="person" value="B" />
+          <label for="armstrong">Neil Armstrong</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="duke" name="person" value="C" />
+          <label for="duke">Charles Duke</label>
+        </div>
+      </div>
+      <div class="submit-quiz flex justify-center items-center m-6">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white p-4 rounded-xl">Submit answers</button>
+      </div>
+    </form>
+  </body>
+</html>
